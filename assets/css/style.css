@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gluten', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.avatar{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(../images/puppy.jpg);
+}
+.container{
+    background-color: rgb(159, 255, 237);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+h4{
+    color: rgb(197, 113, 198);
+}
+.item{
+    background-color: rgb(134, 212, 248);
+    padding: 1rem 9rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.item a{
+        text-decoration: none;
+        color: palevioletred;
+        font-size: 1rem;
+}
+.item:hover{
+    background-color: deepskyblue;
+    transform: translateY(5px);
+}
+@media (max-width: 768px){
+    body{
+        align-items: flex-start;
+    }
+    .item{
+        padding: 1 rem
+    }
+}
